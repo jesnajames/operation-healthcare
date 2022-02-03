@@ -34,8 +34,7 @@ class TransactionQueryProcessor:
 
     @classmethod
     def summarize_by_sku(cls, duration: int) -> List[TransactionSummary]:
-        # TODO: create filter for duration
-        transactions = TransactionJoinsSKU().list_transactions()
+        transactions = TransactionJoinsSKU().list_transactions({"days": duration})
         sorted_transactions = sorted(transactions, key=cls.sku_func)
         transaction_summary = list()
         for key, value in groupby(sorted_transactions, cls.sku_func):
@@ -46,7 +45,7 @@ class TransactionQueryProcessor:
 
     @classmethod
     def summarize_by_category(cls, duration: int) -> List[TransactionSummary]:
-        transactions = TransactionJoinsSKU().list_transactions()
+        transactions = TransactionJoinsSKU().list_transactions({"days": duration})
         sorted_transactions = sorted(transactions, key=cls.category_func)
         transaction_summary = list()
         for key, value in groupby(sorted_transactions, cls.category_func):
