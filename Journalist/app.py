@@ -1,8 +1,8 @@
-from fastapi import FastAPI
 import uvicorn
+from fastapi import FastAPI
 
-from Infrastructure.models import TransactionRecordg
-from Journalist.command_processors import TransactionCommandProcessor
+from Infrastructure.Models import TransactionRecord
+from Journalist.CommandProcessors import TransactionCommandProcessor
 
 app = FastAPI(
     title="Journalist API",

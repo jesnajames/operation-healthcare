@@ -1,4 +1,5 @@
 import os
+
 from google.cloud import pubsub_v1
 from loguru import logger
 
@@ -18,5 +19,3 @@ class TransactionPublisher:
         future = self.publisher.publish(self.topic_path, data)
         logger.info(f"Published message {transaction_record} to topic {self.topic_path}")
         return future.result()
-
-

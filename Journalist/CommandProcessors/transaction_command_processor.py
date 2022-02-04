@@ -1,6 +1,6 @@
 from Infrastructure.exceptions import RecordNotFoundException, BadRequestException
-from Infrastructure.models import TransactionRecord
-from Infrastructure.repository_keeper import SKURepository
+from Infrastructure.Models import TransactionRecord
+from Infrastructure.RepositoryKeeper import SKURepository
 from Journalist.publisher import TransactionPublisher
 
 
