@@ -1,8 +1,8 @@
 from fastapi import FastAPI, HTTPException
 import uvicorn
 
-from query_processors import TransactionQueryProcessor
-from exceptions import RecordNotFoundException
+from Reporter.query_processors import TransactionQueryProcessor
+from Infrastructure.exceptions import RecordNotFoundException
 
 app = FastAPI()
 

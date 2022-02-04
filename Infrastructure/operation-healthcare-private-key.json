@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "operation-healthcare",
+  "private_key_id": "41d8755cd56af010bd594211b2be1a47bc41537d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCvuIkpyyi7Oa8k\nUJMB+4LU7VNDJI2E4Ld7clC8IDM6ddGqA/yZYItPU8z+gPy36Q1A01Ir6669v91N\nxG4sdgGuPL7tv0YrJUdCI0Cx/hFYQPBPf3pWeeGpPouMx91PfkkvooFGlNY+kKqQ\nZZkJFg6efwTxe7UXwGrfOxIWMv2o9me9zaAN642rIXGxT4Zupt6Zv+RCYLgRO1gl\ndaO6IoyyqjfynSto0c8EhPcZ7R8ftCSa0wxX81eU10fcEDhP99qvCWaI8eE42WgN\nRN7BMUNk/YAb3weCQ9Kk5CtW5bAoT3WN8cDI2p0yPQyuNcDjZQehOFaB7aMNwbH3\nOQ/qsb8DAgMBAAECggEABdXVSuZXN5hxINNC09RcAjbQsVsbuVI+ZZgPPEq+yMM0\nL4wrAuuPf2vjU9RJZXtqGEFW6jnNDLoRXvgV8d4IAkGRfuhU1oafY3/eMcr5HSV9\nlXZAmXHktNpsh0P1LSL0H+PVR9hrdkUW6kKldAV1KNLuVsKVP0ZW24uPod3Bn1m5\nJsrC9qnOK8hmqxIXzOKOe6woTVtLOufP40+NwCc3yNTAOWGfgPt9IiJZXrpwEBRw\nV+OQNHIypx1YspB9VzFyqWJPyDVqxfzryQma6S1Rxhg/fiN1VHpO68bjbX3bgWbg\nIukFtutZF20W7VJFx0sKWstw0eBwa/skxHIs5rHQAQKBgQD4dZWYLfEaD6KKrghR\nBQwsX42357no2g1bvFTVv0Nasm7xnIhqpuKLXg1Ki6fvPAgVgt2SEaIfJ9BIz4ZW\n66+1R+Mk9FhXgHgRUcfdKxazlaZsXw1z7JNMhyMEnCg2qxbby4H07ThZwdpFAknQ\noEVsmL/UfLJ2ZtoX9Ku0M/Q4AQKBgQC1Dc6BzmZ+ZjiL34wJa/5I4hhMP+Ezucg4\n0X3Xitp/WxiHSog9LVSvo4xlV4RW15NisHTR1CtzKhizss4JvJFUFQwphd9pZyx4\nu2c2MTCuinI4MkHldkky3TLV1Zq8MYpyQuh9F7IaVamrMjsDQGZrpeHo3oo5qMx1\necGfhc0XAwKBgQCO9qnDTPwkcMaoYYdrhyoABmN3ZKD2uTFijbWK4GkTMQThhZ6B\nL9G/O7kOIdnZsIM+TXTM7dSJdNFGdBLqxObvupOa2fZTMxrjbFlCi96eKwf955vI\nDmKbcE7YAjqpajzW7/yxQCZij0bW2oA6yV3pJOOMksvlkT0A98otAJAQAQKBgA8/\nNWfLCOiWFSb6UWGtvYFHwQIS0xU3DPxz7+QJ5nKZKkyiYyy7t4j+/eC+6P8jMl86\nOuw8sNgG8IOZiC5bueVZzGdmxbSropwcNAnlRJM+R3YiDViUiH+HDzPgxCIbDeyn\nY8q9BxueoSYwmbWhY76m/opMy1kltOojscGMVAQfAoGAcdaSU+B/ZmpcPwiXgiVA\nXxG1SHfKO/XyxAIR5CfeZj9ww8VSJw/lHLzDVPnhLvCPh4SNmaICp4KETScpm2xx\nsI8dwIBGS7I52wiI8GpvwziRtE71eYjaUNtzhxCBVLc16plzOhbRcUF9eCrQ4Doz\nCJDZOrS7Px8XasCDllrHjog=\n-----END PRIVATE KEY-----\n",
+  "client_email": "operation-healthcare-service-a@operation-healthcare.iam.gserviceaccount.com",
+  "client_id": "112886285173230736727",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/operation-healthcare-service-a%40operation-healthcare.iam.gserviceaccount.com"
+}
