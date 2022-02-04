@@ -1,8 +1,9 @@
-from datetime import datetime, timedelta
 import os
-from typing import Dict, List
-
 import pandas
+
+from datetime import datetime, timedelta
+from loguru import logger
+from typing import Dict, List
 
 from Infrastructure.config import ROOT_DIR
 
@@ -22,6 +23,7 @@ class TransactionJoinsSKU:
         filtered_transactions = list()
         today = datetime.today()
         start_date = today - timedelta(days=num_of_days)
+        logger.info(f"Filtering transactions since {start_date.date()}")
         for transaction in transactions:
             transaction_date = datetime.strptime(transaction["transaction_datetime"], "%d/%m/%Y")
             if transaction_date.date() >= start_date.date():

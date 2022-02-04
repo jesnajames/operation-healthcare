@@ -1,6 +1,6 @@
 import os
-
 import pandas
+from loguru import logger
 
 from Infrastructure.config import ROOT_DIR
 from Infrastructure.exceptions import RecordNotFoundException
@@ -22,3 +22,4 @@ class TransactionRepository:
     def add_transaction_record(self, transaction_record: str):
         with open(self.source_path, "a") as transactions_db:
             transactions_db.write(f"{transaction_record}\n")
+            logger.info(f"Transaction record added to repository successfully")
