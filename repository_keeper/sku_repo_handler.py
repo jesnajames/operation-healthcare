@@ -1,6 +1,5 @@
 import os
 import pandas
-from typing import Dict
 
 from config import ROOT_DIR
 from models import SKURecord
