@@ -1,17 +1,17 @@
 import os
-import pandas
-
 from datetime import datetime, timedelta
-from loguru import logger
 from typing import Dict, List
+
+import pandas
+from loguru import logger
 
 from Infrastructure.config import ROOT_DIR
 
 
 class TransactionJoinsSKU:
     def __init__(self):
-        self.transactions_source_path = os.path.join(ROOT_DIR, "repositories", "transactions_db.csv")
-        self.sku_source_path = os.path.join(ROOT_DIR, "repositories", "sku_db.csv")
+        self.transactions_source_path = os.path.join(ROOT_DIR, "Repositories", "transactions_db.csv")
+        self.sku_source_path = os.path.join(ROOT_DIR, "Repositories", "sku_db.csv")
         self.transactions = pandas.read_csv(filepath_or_buffer=self.transactions_source_path, header=[0])
         self.skus = pandas.read_csv(filepath_or_buffer=self.sku_source_path, header=[0])
 

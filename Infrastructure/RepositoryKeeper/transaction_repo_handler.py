@@ -1,15 +1,16 @@
 import os
+
 import pandas
 from loguru import logger
 
 from Infrastructure.config import ROOT_DIR
 from Infrastructure.exceptions import RecordNotFoundException
-from Infrastructure.models import TransactionRecord
+from Infrastructure.Models import TransactionRecord
 
 
 class TransactionRepository:
     def __init__(self):
-        self.source_path = os.path.join(ROOT_DIR, "repositories", "transactions_db.csv")
+        self.source_path = os.path.join(ROOT_DIR, "Repositories", "transactions_db.csv")
         self.transactions = pandas.read_csv(filepath_or_buffer=self.source_path, header=[0])
 
     def get_transaction_record(self, transaction_id: str) -> TransactionRecord:
