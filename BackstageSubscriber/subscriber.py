@@ -1,8 +1,7 @@
-# TODO: Add docs and logs
-
 import os
 from google.cloud import pubsub_v1
 from concurrent.futures import TimeoutError
+from loguru import logger
 
 from Infrastructure.config import ROOT_DIR
 from Infrastructure.repository_keeper import TransactionRepository
@@ -16,12 +15,13 @@ subscription_path = "projects/operation-healthcare/subscriptions/operation-healt
 
 
 def callback(message):
+    logger.debug(f"Message received: {message}")
     TransactionRepository().add_transaction_record(message.data.decode("utf-8"))
     message.ack()
 
 
 streaming_pull_future = subscriber.subscribe(subscription_path, callback=callback)
-
+logger.info(f"Listening for messages on {subscription_path}")
 
 if __name__ == "__main__":
     with subscriber:

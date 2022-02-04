@@ -9,8 +9,11 @@ class TransactionMetadata(BaseModel):
     transaction_datetime: str
 
 
-class TransactionSummary(BaseModel):
-    # TODO: Add check to ensure either sku_name or sku_category is present
-    sku_name: Optional[str]
-    sku_category: Optional[str]
+class SKUSummary(BaseModel):
+    sku_name: str
+    total_amount: float
+
+
+class CategorySummary(BaseModel):
+    sku_category: str
     total_amount: float

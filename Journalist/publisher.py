@@ -1,5 +1,6 @@
 import os
 from google.cloud import pubsub_v1
+from loguru import logger
 
 from Infrastructure.config import ROOT_DIR
 
@@ -15,6 +16,7 @@ class TransactionPublisher:
     def publish_transaction(self, transaction_record: str) -> str:
         data = transaction_record.encode("utf-8")
         future = self.publisher.publish(self.topic_path, data)
+        logger.info(f"Published message {transaction_record} to topic {self.topic_path}")
         return future.result()
 
 

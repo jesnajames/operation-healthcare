@@ -1,10 +1,17 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 import uvicorn
 
-from Infrastructure.models import TransactionRecord
+from Infrastructure.models import TransactionRecordg
 from Journalist.command_processors import TransactionCommandProcessor
 
-app = FastAPI()
+app = FastAPI(
+    title="Journalist API",
+    description="Veteran journalist publishing to the hottest topics.\n"
+                "Makes latest transaction records available for consumption."
+                "Available endpoints:\n"
+                "1. POST /transactions",
+    version="1.0.0"
+)
 
 
 @app.get("/")
